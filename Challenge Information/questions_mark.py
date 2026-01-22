@@ -20,20 +20,23 @@ Example 3:
     Input: "arrb6???4xxbl5???eee5"
     Output: true
 '''
-from collections import Counter
 
 
-def QuestionsMark(strParam: str) -> str:
-    decimals = [i for i, d in enumerate(strParam) if d.isdecimal()]
-    progress = False
-    for i in range(0, len(decimals), 2):
-        start, end = int(strParam[decimals[i]]), int(strParam[decimals[i + 1]])
-        if start + end == 10:
-            substring = strParam[decimals[i]:decimals[i+1]]
-            counter = Counter(substring)
-            if counter['?'] == 3:
-                progress = True
-    return 'true' if progress else 'false'
+def QuestionsMarks(strParam: str) -> str:
+    digits = [(i, int(ch)) for i, ch in enumerate(strParam) if ch.isdecimal()]
+    found_pair = False
+
+    for i in range(len(digits) - 1):
+        pos1, num1 = digits[i]
+        pos2, num2 = digits[i + 1]
+
+        if num1 + num2 == 10:
+            found_pair = True
+            substring = strParam[pos1:pos2]
+            if substring.count('?') != 3:
+                return 'false'
+
+    return 'true' if found_pair else 'false'
 
 # # keep this function call here
 # print(QuestionsMarks(input()))
