@@ -21,23 +21,23 @@ Example 2
 '''
 
 
-def CodelandUsernameValidation(strParam):
+def CodelandUsernameValidation(strParam: str) -> str:
     # code goes here
     length = len(strParam)
     if length < 4 or length > 25:
-        return False
+        return 'false'
 
-    if strParam[0] not in 'abcdefghijklmnopqrstuvwxyz':
-        return False
+    if not strParam[0].isalpha():
+        return 'false'
 
     for ch in strParam:
-        if ch not in 'abcdefghijklmnopqrstuvwxyz0123456789_':
-            return False
+        if not ch.isalpha() and not ch.isdecimal() and ch != '_':
+            return 'false'
 
     if strParam[-1] == '_':
-        return False
+        return 'false'
 
-    return True
+    return 'true'
 
 
 # # keep this function call here

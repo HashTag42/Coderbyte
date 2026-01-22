@@ -4,12 +4,12 @@ import pytest
 
 test_cases = [
     # (strParam, expected)
-    ('aa_', False),
-    ('u__hello_world123', True),
-    ('aaaaaaaaaa', True),
-    ('1aaaaaaaaaa', False),
-    ('aaaaa*aaaaa', False),
-    ('aaaaaaaaaa_', False),
+    ('aa_', 'false'),
+    ('u__hello_world123', 'true'),
+    ('aaaaaaaaaa', 'true'),
+    ('1aaaaaaaaaa', 'false'),
+    ('aaaaa*aaaaa', 'false'),
+    ('aaaaaaaaaa_', 'false'),
 ]
 
 
