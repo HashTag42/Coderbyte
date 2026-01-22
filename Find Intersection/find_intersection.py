@@ -22,12 +22,10 @@ Example 3
 
 def FindIntersection(strArr):
     # code goes here
-    set0 = set([int(x) for x in strArr[0].split(',')])
-    set1 = set([int(x) for x in strArr[1].split(',')])
-    intersection = sorted(list(set0 & set1))
-    if len(intersection) == 0:
-        return 'false'
-    return ', '.join(str(x) for x in intersection)
+    set0 = {int(x) for x in strArr[0].split(',')}
+    set1 = {int(x) for x in strArr[1].split(',')}
+    intersection = sorted(set0 & set1)
+    return ', '.join(str(x) for x in intersection) if intersection else 'false'
 
 
 # # keep this function call here
