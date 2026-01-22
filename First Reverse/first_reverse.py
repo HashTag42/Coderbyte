@@ -17,7 +17,7 @@ Example 2
 
 def FirstReverse(strParam):
     # code goes here
-    return ''.join(reversed(strParam))
+    return strParam[::-1]
 
 
 # # keep this function call here
