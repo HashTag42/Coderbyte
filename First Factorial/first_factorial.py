@@ -16,8 +16,9 @@ Example 2
 
 
 def FirstFactorial(num):
+    '''Return the factorial of a positive integer num.'''
     result = 1
-    for i in range(1, num + 1):
+    for i in range(2, num + 1):
         result *= i
     # code goes here
     return result
