@@ -1,0 +1,39 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Codeland Username Validation", "Codeland Username Validation", "{91502F37-0149-7D81-9B61-DAD1C9256EEA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cs", "cs", "{134BAC4D-C213-4447-D217-202828B57060}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodelandUsernameValidation", "Codeland Username Validation\cs\CodelandUsernameValidation\CodelandUsernameValidation.csproj", "{394380AB-DDA1-7958-2AC2-526E0A0091E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTests", "Codeland Username Validation\cs\MyTests\MyTests.csproj", "{F1668E53-06F4-2CAB-E3FC-4D0D047C6DAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{394380AB-DDA1-7958-2AC2-526E0A0091E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{394380AB-DDA1-7958-2AC2-526E0A0091E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{394380AB-DDA1-7958-2AC2-526E0A0091E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{394380AB-DDA1-7958-2AC2-526E0A0091E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1668E53-06F4-2CAB-E3FC-4D0D047C6DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1668E53-06F4-2CAB-E3FC-4D0D047C6DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1668E53-06F4-2CAB-E3FC-4D0D047C6DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1668E53-06F4-2CAB-E3FC-4D0D047C6DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{134BAC4D-C213-4447-D217-202828B57060} = {91502F37-0149-7D81-9B61-DAD1C9256EEA}
+		{394380AB-DDA1-7958-2AC2-526E0A0091E3} = {134BAC4D-C213-4447-D217-202828B57060}
+		{F1668E53-06F4-2CAB-E3FC-4D0D047C6DAD} = {134BAC4D-C213-4447-D217-202828B57060}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10818876-22CB-4377-982D-C820836BFA56}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,8 @@
+[
+  ["aa_", "false"],
+  ["u__hello_world123", "true"],
+  ["aaaaaaaaaa", "true"],
+  ["1aaaaaaaaaa", "false"],
+  ["aaaaa*aaaaa", "false"],
+  ["aaaaaaaaaa_", "false"]
+]

@@ -1,7 +1,21 @@
 {
-    "python.testing.pytestArgs": [
-        "."
-    ],
-    "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+  // ---------- PYTHON TESTING ----------
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.testing.pytestArgs": [
+    "."
+  ],
+
+  // ---------- PYTHON ENVIRONMENT ----------
+  "python.defaultInterpreterPath": "${workspaceFolder}/venv/Scripts/python.exe",
+
+  // ---------- C# / .NET TESTING ----------
+  "dotnet.testExplorer.enable": true,
+  "dotnet.testExplorer.testProjectPath": "**/*Tests.csproj",
+
+  // ---------- GENERAL ----------
+  "testing.automaticallyOpenPeekView": "never",
+"testing.showCoverage": true,
+"python-envs.pythonProjects": []
 }
