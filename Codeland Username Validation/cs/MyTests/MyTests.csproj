@@ -18,4 +18,11 @@
     <ProjectReference Include="..\CodelandUsernameValidation\CodelandUsernameValidation.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="..\..\test_cases.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Link>test_cases.json</Link>
+    </None>
+  </ItemGroup>
+
 </Project>
