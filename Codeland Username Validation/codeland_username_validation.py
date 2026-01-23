@@ -23,17 +23,22 @@ Example 2
 
 def CodelandUsernameValidation(strParam: str) -> str:
     # code goes here
+
+    # Length must be greater than 4 and smaller than 25
     length = len(strParam)
     if length < 4 or length > 25:
         return 'false'
 
+    # First character must be a letter
     if not strParam[0].isalpha():
         return 'false'
 
+    # All characters must be letter, digits, or underscore
     for ch in strParam:
         if not ch.isalpha() and not ch.isdecimal() and ch != '_':
             return 'false'
 
+    # Last character cannot be underscore
     if strParam[-1] == '_':
         return 'false'
 
