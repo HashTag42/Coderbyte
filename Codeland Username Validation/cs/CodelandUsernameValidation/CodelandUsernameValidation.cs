@@ -19,11 +19,11 @@ Example 2
     Input: "u__hello_world123"
     Output: true
 */
-
-
 using System;
 
-class MainClass {
+namespace Coderbyte;
+
+public static class MainClass {
 
   public static string CodelandUsernameValidation(string strParam) {
 
