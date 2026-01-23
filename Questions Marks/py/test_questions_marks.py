@@ -1,4 +1,4 @@
-from questions_mark import QuestionsMarks
+from questions_marks import QuestionsMarks
 import pytest
 
 
