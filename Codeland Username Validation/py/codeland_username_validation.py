@@ -35,7 +35,7 @@ def CodelandUsernameValidation(strParam: str) -> str:
 
     # All characters must be letter, digits, or underscore
     for ch in strParam:
-        if not ch.isalpha() and not ch.isdecimal() and ch != '_':
+        if not ch.isalnum() and ch != '_':
             return 'false'
 
     # Last character cannot be underscore
