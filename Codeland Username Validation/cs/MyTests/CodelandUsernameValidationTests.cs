@@ -13,7 +13,7 @@ public class CodelandUsernameValidationTests
             // test_cases.json is copied to the output directory
             var assemblyDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)!;
             var jsonPath = Path.Combine(assemblyDir, "test_cases.json");
-            var json = File.ReadAllText("test_cases.json");
+            var json = File.ReadAllText(jsonPath);
             var data = JsonSerializer.Deserialize<List<string[]>>(json)!;
             return data.Select(arr => arr.Cast<object>().ToArray());
         }
