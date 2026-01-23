@@ -1,13 +1,13 @@
-from find_intersection import FindIntersection
+import json
+import pathlib
 import pytest
+from find_intersection import FindIntersection
 
+root = pathlib.Path(__file__).resolve().parents[1]
+test_cases_path = root / "test_cases.json"
 
-test_cases = [
-    # (strArr, expected)
-    (["1, 3, 4, 7, 13", "1, 2, 4, 13, 15"], "1, 4, 13"),
-    (["1, 3, 9, 10, 17, 18", "1, 4, 9, 10"], "1, 9, 10"),
-    (["1, 2, 3, 4, 5", "6, 7, 8, 9, 10"], "false"),
-]
+with open(test_cases_path) as f:
+    test_cases = json.load(f)
 
 
 @pytest.mark.parametrize('strArr, expected', test_cases)
