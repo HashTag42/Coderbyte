@@ -43,13 +43,4 @@ public class MainClass
             ? string.Join(", ", intersection)
             : "false";
     }
-
-    static void Main()
-    {
-        // Coderbyte-style input: "1, 3, 4, 7, 13|1, 2, 4, 13, 15"
-        var input = "1, 3, 4, 7, 13|1, 2, 4, 13, 15";
-        var parts = input.Split('|');
-
-        Console.WriteLine(FindIntersection(parts));
-    }
 }
