@@ -25,27 +25,27 @@ using System;
 
 class MainClass {
 
-  public static string CodelandUsernameValidation(string str) {
+  public static string CodelandUsernameValidation(string strParam) {
 
     // code goes here
 
     // Length must be greater than 4 and smaller than 25
-    int length = str.Length;
+    int length = strParam.Length;
     if (length < 4 || length > 25)
       return "false";
 
     // First character must be a letter
-    if (!char.IsLetter(str[0]))
+    if (!char.IsLetter(strParam[0]))
       return "false";
 
     // All characters must be letter, digits, or underscore
-    foreach (char ch in str) {
+    foreach (char ch in strParam) {
       if (!char.IsLetterOrDigit(ch) && ch != '_')
         return "false";
     }
 
     // Last character cannot be underscore
-    if (str[length - 1] == '_')
+    if (strParam[^1] == '_')
       return "false";
 
     return "true";
