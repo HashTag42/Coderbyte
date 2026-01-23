@@ -50,13 +50,4 @@ public static class MainClass {
 
     return "true";
   }
-
-  // keep this function call here
-  static void Main() {
-
-    string Input = "u__hello_world123";
-    Console.WriteLine(CodelandUsernameValidation(Input));
-
-  }
-
 }
