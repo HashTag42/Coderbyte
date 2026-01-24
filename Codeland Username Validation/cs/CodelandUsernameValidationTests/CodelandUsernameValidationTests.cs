@@ -2,9 +2,9 @@ using Shared;
 using Xunit;
 using CodelandUsernameValidation;
 
-namespace MyTests;
+namespace CodelandTests;
 
-public class CodelandUsernameValidationTests
+public class UsernameValidationTests
 {
     public static TheoryData<string, string> TestCases
     {
