@@ -18,9 +18,6 @@ Example 3
     Input: ["1, 2, 3, 4, 5", "6, 7, 8, 9, 10"]
     Output: "false"
 */
-using System;
-using System.Linq;
-
 namespace Coderbyte;
 
 public class MainClass
