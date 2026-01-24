@@ -1,17 +1,13 @@
-from first_factorial import FirstFactorial
+import json
+import pathlib
 import pytest
+from first_factorial import FirstFactorial
 
+root = pathlib.Path(__file__).resolve().parents[1]
+test_cases_path = root / "test_cases.json"
 
-test_cases = [
-    # (num, expected)
-    (0, 1),
-    (1, 1),
-    (2, 2),
-    (3, 6),
-    (4, 24),
-    (8, 40320),
-    (20, 2432902008176640000),
-]
+with open(test_cases_path) as f:
+    test_cases = json.load(f)
 
 
 @pytest.mark.parametrize('num, expected', test_cases)
