@@ -19,14 +19,13 @@ Example 2
     Input: "u__hello_world123"
     Output: true
 */
-using System;
+namespace CodelandUsernameValidation;
 
-namespace Coderbyte;
+public static class MainClass
+{
 
-public static class MainClass {
-
-  public static string CodelandUsernameValidation(string strParam) {
-
+  public static string CodelandUsernameValidation(string strParam)
+  {
     // code goes here
 
     // Length must be greater than 4 and smaller than 25
@@ -39,7 +38,8 @@ public static class MainClass {
       return "false";
 
     // All characters must be letter, digits, or underscore
-    foreach (char ch in strParam) {
+    foreach (char ch in strParam)
+    {
       if (!char.IsLetterOrDigit(ch) && ch != '_')
         return "false";
     }

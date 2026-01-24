@@ -1,21 +1,32 @@
 using System.Reflection;
 using System.Text.Json;
+using CodelandUsernameValidation;
 using Xunit;
 
-namespace Coderbyte;
+namespace MyTests;
 
 public class CodelandUsernameValidationTests
 {
-    public static IEnumerable<object[]> TestCases
+    public static TheoryData<string, string> TestCases
     {
         get
         {
-            // test_cases.json is copied to the output directory
+            var data = new TheoryData<string, string>();
+
+            // test_cases.json is copied to the output directory at build time
             var assemblyDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)!;
             var jsonPath = Path.Combine(assemblyDir, "test_cases.json");
             var json = File.ReadAllText(jsonPath);
-            var data = JsonSerializer.Deserialize<List<string[]>>(json)!;
-            return data.Select(arr => arr.Cast<object>().ToArray());
+
+            var rows = JsonSerializer.Deserialize<List<string[]>>(json)!;
+
+            foreach (var row in rows)
+            {
+                // row[0] = input, row[1] = expected
+                data.Add(row[0], row[1]);
+            }
+
+            return data;
         }
     }
 
