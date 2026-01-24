@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-using System.IO;
-using System.Reflection;
+using Shared;
 using System.Text.Json;
 using Xunit;
 
@@ -13,27 +11,12 @@ public class FindIntersectionTests
         get
         {
             var data = new TheoryData<string[], string>();
+            var rows = TestDataLoader.LoadNestedArrayData("test_cases.json");
 
-            // test_cases.json is copied to the output directory at build tim
-            var assemblyDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)!;
-            var jsonPath = Path.Combine(assemblyDir, "test_cases.json");
-            var json = File.ReadAllText(jsonPath);
-
-            var raw = JsonSerializer.Deserialize<List<object[]>>(json)!;
-
-            foreach (var row in raw)
+            foreach (var row in rows)
             {
-                var jsonElement = (JsonElement)row[0];
-
-                var list = new List<string>();
-                foreach (var item in jsonElement.EnumerateArray())
-                {
-                    list.Add(item.GetString()!);
-                }
-
-                var arr = list.ToArray();
+                var arr = TestDataLoader.ExtractStringArray((JsonElement)row[0]);
                 var expected = row[1]!.ToString()!;
-
                 data.Add(arr, expected);
             }
 

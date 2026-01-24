@@ -1,7 +1,6 @@
-using System.Reflection;
-using System.Text.Json;
-using CodelandUsernameValidation;
+using Shared;
 using Xunit;
+using CodelandUsernameValidation;
 
 namespace MyTests;
 
@@ -12,19 +11,10 @@ public class CodelandUsernameValidationTests
         get
         {
             var data = new TheoryData<string, string>();
-
-            // test_cases.json is copied to the output directory at build time
-            var assemblyDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)!;
-            var jsonPath = Path.Combine(assemblyDir, "test_cases.json");
-            var json = File.ReadAllText(jsonPath);
-
-            var rows = JsonSerializer.Deserialize<List<string[]>>(json)!;
+            var rows = TestDataLoader.LoadArrayData<string>("test_cases.json");
 
             foreach (var row in rows)
-            {
-                // row[0] = input, row[1] = expected
                 data.Add(row[0], row[1]);
-            }
 
             return data;
         }
@@ -32,9 +22,9 @@ public class CodelandUsernameValidationTests
 
     [Theory]
     [MemberData(nameof(TestCases))]
-    public void TestCodelandUsernameValidation(string strParam, string expected)
+    public void TestCodelandUsernameValidation(string input, string expected)
     {
-        var result = MainClass.CodelandUsernameValidation(strParam);
+        var result = MainClass.CodelandUsernameValidation(input);
         Assert.Equal(expected, result);
     }
 }
