@@ -1,13 +1,13 @@
-from first_reverse import FirstReverse
+import json
+import pathlib
 import pytest
+from first_reverse import FirstReverse
 
+root = pathlib.Path(__file__).resolve().parents[1]
+test_cases_path = root / "test_cases.json"
 
-test_cases = [
-    # (strParam, expected)
-    ('coderbyte', 'etybredoc'),
-    ('Coderbyte', 'etybredoC'),
-    ('I Love Code', 'edoC evoL I'),
-]
+with open(test_cases_path) as f:
+    test_cases = json.load(f)
 
 
 @pytest.mark.parametrize('strParam, expected', test_cases)
