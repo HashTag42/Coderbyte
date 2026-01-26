@@ -3,7 +3,7 @@ using Xunit;
 
  namespace Coderbyte.LongestWord;
 
- public static class LongestWordTests
+ public class LongestWordTests
 {
     public static TheoryData<string, string> TestCases
     {
@@ -21,7 +21,7 @@ using Xunit;
 
     [Theory]
     [MemberData(nameof(TestCases))]
-    public static void TestLongestWord(string sen, string expected)
+    public void TestLongestWord(string sen, string expected)
     {
         Assert.Equal(LongestWord.Calculate(sen), expected);
     }

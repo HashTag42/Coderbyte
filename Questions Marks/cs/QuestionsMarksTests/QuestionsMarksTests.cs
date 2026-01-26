@@ -3,7 +3,7 @@ using Xunit;
 
 namespace Coderbyte.QuestionsMarks;
 
-public static class QuestionsMarksTests
+public class QuestionsMarksTests
 {
     public static TheoryData<string, string> TestCases
     {
@@ -21,7 +21,7 @@ public static class QuestionsMarksTests
 
     [Theory]
     [MemberData(nameof(TestCases))]
-    public static void TestQuestionsMarks(string strParam, string expected)
+    public void TestQuestionsMarks(string strParam, string expected)
     {
         Assert.Equal(QuestionsMarks.Calculate(strParam), expected);
     }
