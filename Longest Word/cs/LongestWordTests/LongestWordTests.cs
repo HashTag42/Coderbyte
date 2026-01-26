@@ -1,9 +1,9 @@
 using Shared;
 using Xunit;
 
- namespace Coderbyte.LongestWord;
+namespace Coderbyte.LongestWord;
 
- public class LongestWordTests
+public class LongestWordTests
 {
     public static TheoryData<string, string> TestCases
     {
