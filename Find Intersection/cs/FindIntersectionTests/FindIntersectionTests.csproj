@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MainClass\MainClass.csproj" />
+    <ProjectReference Include="..\FindIntersection\FindIntersection.csproj" />
     <ProjectReference Include="..\..\..\Shared\Shared.csproj" />
   </ItemGroup>
 

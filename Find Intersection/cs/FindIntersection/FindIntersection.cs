@@ -18,11 +18,11 @@ Example 3
     Input: ["1, 2, 3, 4, 5", "6, 7, 8, 9, 10"]
     Output: "false"
 */
-namespace Coderbyte;
+namespace Coderbyte.FindIntersection;
 
-public class MainClass
+public class FindIntersection
 {
-    public static string FindIntersection(string[] strArr)
+    public static string Calculate(string[] strArr)
     {
         var set0 = strArr[0]
             .Split(',', StringSplitOptions.RemoveEmptyEntries)

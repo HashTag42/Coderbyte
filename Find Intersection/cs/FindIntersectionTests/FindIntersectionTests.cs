@@ -2,7 +2,7 @@ using Shared;
 using System.Text.Json;
 using Xunit;
 
-namespace Coderbyte;
+namespace Coderbyte.FindIntersection;
 
 public class FindIntersectionTests
 {
@@ -28,7 +28,7 @@ public class FindIntersectionTests
     [MemberData(nameof(TestCases))]
     public void TestFindIntersection(string[] strArr, string expected)
     {
-        var result = MainClass.FindIntersection(strArr);
+        var result = FindIntersection.Calculate(strArr);
         Assert.Equal(expected, result);
     }
 }

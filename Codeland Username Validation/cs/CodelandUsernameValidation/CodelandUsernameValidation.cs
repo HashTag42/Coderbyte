@@ -19,12 +19,12 @@ Example 2
     Input: "u__hello_world123"
     Output: true
 */
-namespace CodelandUsernameValidation;
+namespace Coderbyte.CodelandUsernameValidation;
 
-public static class MainClass
+public static class CodelandUsernameValidation
 {
 
-  public static string CodelandUsernameValidation(string strParam)
+  public static string Calculate(string strParam)
   {
     // code goes here
 

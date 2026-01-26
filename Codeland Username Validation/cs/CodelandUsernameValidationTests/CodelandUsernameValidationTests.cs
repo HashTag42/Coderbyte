@@ -1,10 +1,9 @@
 using Shared;
 using Xunit;
-using CodelandUsernameValidation;
 
-namespace CodelandTests;
+namespace Coderbyte.CodelandUsernameValidation;
 
-public class UsernameValidationTests
+public class CodelandUsernameValidationTests
 {
     public static TheoryData<string, string> TestCases
     {
@@ -24,7 +23,7 @@ public class UsernameValidationTests
     [MemberData(nameof(TestCases))]
     public void TestCodelandUsernameValidation(string input, string expected)
     {
-        var result = MainClass.CodelandUsernameValidation(input);
+        var result = CodelandUsernameValidation.Calculate(input);
         Assert.Equal(expected, result);
     }
 }
