@@ -23,6 +23,7 @@ using Xunit;
     [MemberData(nameof(TestCases))]
     public void TestLongestWord(string sen, string expected)
     {
-        Assert.Equal(LongestWord.Calculate(sen), expected);
+        var result = LongestWord.Calculate(sen);
+        Assert.Equal(expected, result);
     }
 }

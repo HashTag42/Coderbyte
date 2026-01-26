@@ -23,6 +23,7 @@ public class QuestionsMarksTests
     [MemberData(nameof(TestCases))]
     public void TestQuestionsMarks(string strParam, string expected)
     {
-        Assert.Equal(QuestionsMarks.Calculate(strParam), expected);
+        var result = QuestionsMarks.Calculate(strParam);
+        Assert.Equal(expected, result);
     }
 }

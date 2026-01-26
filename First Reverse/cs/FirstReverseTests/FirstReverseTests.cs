@@ -23,6 +23,7 @@ public class FirstReverseTests
     [MemberData(nameof(TestCases))]
     public void TestFirstReverse(string strParam, string expected)
     {
-        Assert.Equal(FirstReverse.Calculate(strParam), expected);
+        var result = FirstReverse.Calculate(strParam);
+        Assert.Equal(expected, result);
     }
 }
