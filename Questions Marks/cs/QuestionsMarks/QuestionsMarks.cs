@@ -32,7 +32,7 @@ public static class QuestionsMarks
         {
             if (char.IsDigit(strParam[i]))
             {
-                digits.Add((i, strParam[i] - '0'));
+                digits.Add((i, (int)char.GetNumericValue(strParam[i])));
             }
         }
 
@@ -48,7 +48,7 @@ public static class QuestionsMarks
             {
                 foundPair = true;
 
-                string substring = strParam.Substring(pos1, pos2 - pos1);
+                string substring = strParam[pos1..pos2];
 
                 int questionCount = substring.Count(ch => ch == '?');
                 if (questionCount != 3)
