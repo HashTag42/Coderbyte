@@ -100,4 +100,11 @@
   * ![JSON](https://img.shields.io/badge/JSON-000000?style=flat&logo=json&logoColor=white)
     * Test data: [`test_cases.json`](./Questions%20Marks/test_cases.json)
 
+* Challlenge: [Bracket Matcher](https://coderbyte.com/information/Bracket%20Matcher)
+  * ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+    * Solution: [`bracket_matcher.py`](./Bracket%20Matcher/py/bracket_matcher.py)
+    * Test runner: [`test_bracket_matcher.py`](./Bracket%20Matcher/py/test_bracket_matcher.py)
+  * ![JSON](https://img.shields.io/badge/JSON-000000?style=flat&logo=json&logoColor=white)
+    * Test data: [`test_cases.json`](./Bracket%20Matcher/test_cases.json)
+
 ---
