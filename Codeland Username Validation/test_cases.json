@@ -4,5 +4,19 @@
   ["aaaaaaaaaa", "true"],
   ["1aaaaaaaaaa", "false"],
   ["aaaaa*aaaaa", "false"],
-  ["aaaaaaaaaa_", "false"]
+  ["aaaaaaaaaa_", "false"],
+  ["a", "false"],
+  ["ab", "false"],
+  ["_username", "false"],
+  ["username_123", "true"],
+  ["user@name", "false"],
+  ["aaaaaaaaaaaaaaaaaaaaaaaaa", "true"],
+  ["aaaaaaaaaaaaaaaaaaaaaaaaaa", "false"],
+  ["User123", "true"],
+  ["", "false"],
+  ["user-name", "false"],
+  ["user name", "false"],
+  ["_", "false"],
+  ["abc123def", "true"],
+  ["123abc", "false"]
 ]
