@@ -19,8 +19,6 @@ public static class FirstReverse
 {
     public static string Calculate(string strParam)
     {
-        var chars = strParam.ToCharArray();
-        Array.Reverse(chars);
-        return new string(chars);
+        return new string(strParam.Reverse().ToArray());
     }
 }
