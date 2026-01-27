@@ -1,5 +1,16 @@
 [
     ["coderbyte", "etybredoc"],
     ["Coderbyte", "etybredoC"],
-    ["I Love Code", "edoC evoL I"]
+    ["I Love Code", "edoC evoL I"],
+    ["a", "a"],
+    ["ab", "ba"],
+    ["123", "321"],
+    ["Hello123", "321olleH"],
+    ["!@#$%", "%$#@!"],
+    ["a b c", "c b a"],
+    ["", ""],
+    ["12345", "54321"],
+    ["racecar", "racecar"],
+    ["A", "A"],
+    ["The Quick Brown Fox", "xoF nworB kciuQ ehT"]
 ]
