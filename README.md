@@ -39,6 +39,13 @@
 
 ## Challenges
 
+* Challlenge: [Bracket Matcher](https://coderbyte.com/information/Bracket%20Matcher)
+  * ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+    * Solution: [`bracket_matcher.py`](./Bracket%20Matcher/py/bracket_matcher.py)
+    * Test runner: [`test_bracket_matcher.py`](./Bracket%20Matcher/py/test_bracket_matcher.py)
+  * ![JSON](https://img.shields.io/badge/JSON-000000?style=flat&logo=json&logoColor=white)
+    * Test data: [`test_cases.json`](./Bracket%20Matcher/test_cases.json)
+
 * Challenge: [Codeland Username Validation](https://coderbyte.com/information/Codeland%20Username%20Validation)
 
   * ![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white)
@@ -99,12 +106,5 @@
     * Test runner: [`test_questions_marks.py`](./Questions%20Marks/py/test_questions_marks.py)
   * ![JSON](https://img.shields.io/badge/JSON-000000?style=flat&logo=json&logoColor=white)
     * Test data: [`test_cases.json`](./Questions%20Marks/test_cases.json)
-
-* Challlenge: [Bracket Matcher](https://coderbyte.com/information/Bracket%20Matcher)
-  * ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-    * Solution: [`bracket_matcher.py`](./Bracket%20Matcher/py/bracket_matcher.py)
-    * Test runner: [`test_bracket_matcher.py`](./Bracket%20Matcher/py/test_bracket_matcher.py)
-  * ![JSON](https://img.shields.io/badge/JSON-000000?style=flat&logo=json&logoColor=white)
-    * Test data: [`test_cases.json`](./Bracket%20Matcher/test_cases.json)
 
 ---
