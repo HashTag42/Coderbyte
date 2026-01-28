@@ -105,6 +105,14 @@
 * ![JSON](https://img.shields.io/badge/JSON-000000?style=flat&logo=json&logoColor=white)
   * Test data: [`test_cases.json`](./Longest%20Word/test_cases.json)
 
+### Challenge: [Min Window Substring](https://coderbyte.com/information/Min%20Window%20Substring)
+
+* ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+  * Solution: [`min_window_substring`](./Min%20Window%20Substring/py/min_window_substring.py)
+  * Test runner: [`test_min_window_substring`](./Min%20Window%20Substring/py/test_min_window_substring.py)
+* ![JSON](https://img.shields.io/badge/JSON-000000?style=flat&logo=json&logoColor=white)
+  * Test data: [`test_cases.json`](./Min%20Window%20Substring/test_cases.json)
+
 ### Challenge: [Questions Marks](https://coderbyte.com/information/Questions%20Marks)
 
 * ![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white)
