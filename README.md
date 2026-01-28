@@ -27,13 +27,13 @@
 ### Running test cases
 
 * ![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white)
- Test cases can be run from the Test Explorer tab in ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white)
+  * From ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white), test cases can be run from the Test Explorer tab.
   * From the command-line, run:
     * `dotnet clean`
-    * `dotnet restore`
     * `dotnet build`
     * `dotnet test`
-* ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) test cases can be run from the Test Explorer tab in ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white)
+* ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+  * From ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white), test cases can be run from the Test Explorer tab.
   * From the command-line, run:
     * `pytest`
 
