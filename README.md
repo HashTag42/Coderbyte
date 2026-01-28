@@ -116,4 +116,12 @@
 * ![JSON](https://img.shields.io/badge/JSON-000000?style=flat&logo=json&logoColor=white)
   * Test data: [`test_cases.json`](./Questions%20Marks/test_cases.json)
 
+### Challenge: [Tree Constructor](https://coderbyte.com/information/Tree%20Constructor)
+
+* ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+  * Solution: [`questions_marks.py`](./Tree%20Constructor/py/tree_constructor.py)
+  * Test runner: [`test_questions_marks.py`](./Tree%20Constructor/py/test_tree_constructor.py)
+* ![JSON](https://img.shields.io/badge/JSON-000000?style=flat&logo=json&logoColor=white)
+  * Test data: [`test_cases.json`](./Tree%20Constructor/test_cases.json)
+
 ---
