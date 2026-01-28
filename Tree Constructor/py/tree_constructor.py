@@ -23,29 +23,20 @@ Example 2
     Input: ["(1,2)", "(3,2)", "(2,12)", "(5,2)"]
     Output: "false"
 '''
+from collections import defaultdict
 
 
 def TreeConstructor(strArr) -> str:
-    parent_child_count = {}  # Track how many children each parent has
-    child_parent_count = {}  # Track how many parents each child has
+    parent_child_count = defaultdict(int)
+    child_parent_count = defaultdict(int)
 
     for pair in strArr:
-        # Parse "(child,parent)" - remove parentheses and split
-        nums = pair.strip("()").split(",")
-        child = int(nums[0])
-        parent = int(nums[1])
+        child, parent = map(int, pair.strip("()").split(","))
 
-        # Count children for each parent
-        parent_child_count[parent] = parent_child_count.get(parent, 0) + 1
-        # Count parents for each child
-        child_parent_count[child] = child_parent_count.get(child, 0) + 1
+        parent_child_count[parent] += 1
+        child_parent_count[child] += 1
 
-        # Binary tree: parent can have at most 2 children
-        if parent_child_count[parent] > 2:
-            return "false"
-
-        # Each node can have only 1 parent
-        if child_parent_count[child] > 1:
+        if parent_child_count[parent] > 2 or child_parent_count[child] > 1:
             return "false"
 
     return "true"
