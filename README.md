@@ -41,6 +41,9 @@
 
 ### Challenge: [Bracket Combinations](https://coderbyte.com/information/Bracket%20Combinations)
 
+* ![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white)
+  * Solution: [`BracketCombinations.cs`](./Bracket%20Combinations/cs/BracketCombinations/BracketCombinations.cs)
+  * Test runner:  [`BracketCombinationsTests.cs`](./Bracket%20Combinations/cs/BracketCombinationsTests/BracketCombinationsTests.cs)
 * ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
   * Solution: [`bracket_combinations.py`](./Bracket%20Combinations/py/bracket_combinations.py)
   * Test runner: [`test_bracket_combinations.py`](./Bracket%20Combinations/py/test_bracket_conbinations.py)
