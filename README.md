@@ -39,6 +39,14 @@
 
 ## Challenges
 
+### Challenge: [Bracket Combinations](https://coderbyte.com/information/Bracket%20Combinations)
+
+* ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+  * Solution: [`bracket_combinations.py`](./Bracket%20Combinations/py/bracket_combinations.py)
+  * Test runner: [`test_bracket_combinations.py`](./Bracket%20Combinations/py/test_bracket_conbinations.py)
+* ![JSON](https://img.shields.io/badge/JSON-000000?style=flat&logo=json&logoColor=white)
+  * Test data: [`test_cases.json`](./Bracket%20Combinations/test_cases.json)
+
 ### Challlenge: [Bracket Matcher](https://coderbyte.com/information/Bracket%20Matcher)
 
 * ![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white)
