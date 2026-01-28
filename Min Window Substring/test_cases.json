@@ -4,5 +4,21 @@
     [["aaabaaddae", "aed"], "dae"],
     [["aabdccdbcacd", "aad"], "aabd"],
     [["aaffsfsfasfasfasfasfasfacasfafe", "fafe"], "fafe"],
-    [["caae", "cae"], "caae"]
+    [["caae", "cae"], "caae"],
+    [["a", "a"], "a"],
+    [["abc", "abc"], "abc"],
+    [["abc", "a"], "a"],
+    [["abc", "c"], "c"],
+    [["abcdef", "fc"], "cdef"],
+    [["xxaxxbxxc", "abc"], "axxbxxc"],
+    [["abcabdebac", "cda"], "cabd"],
+    [["aaaaaaaaaa", "aaa"], "aaa"],
+    [["abcdefgh", "hd"], "defgh"],
+    [["timetopractice", "toc"], "toprac"],
+    [["zqyvbfeiee", "ze"], "zqyvbfe"],
+    [["vxczovnkxkz", "xkz"], "xkz"],
+    [["adobecodebanc", "abc"], "banc"],
+    [["xyyzyzyx", "xyz"], "zyx"],
+    [["aabbcc", "abc"], "abbc"],
+    [["abba", "ab"], "ab"]
 ]
