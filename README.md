@@ -118,6 +118,9 @@
 
 ### Challenge: [Tree Constructor](https://coderbyte.com/information/Tree%20Constructor)
 
+* ![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white)
+  * Solution: [`TreeConstructor.cs`](./Tree%20Constructor/cs/TreeConstructor/TreeConstructor.cs)
+  * Test runner: [`TreeConstructorTests.cs`](./Tree%20Constructor/cs/TreeConstructorTests/TreeConstructorTests.cs)
 * ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
   * Solution: [`tree_constructor.py`](./Tree%20Constructor/py/tree_constructor.py)
   * Test runner: [`test_tree_constructor.py`](./Tree%20Constructor/py/test_tree_constructor.py)
