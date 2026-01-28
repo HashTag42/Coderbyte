@@ -107,6 +107,9 @@
 
 ### Challenge: [Min Window Substring](https://coderbyte.com/information/Min%20Window%20Substring)
 
+* ![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white)
+  * Solution: [`MinWindowSubstring.cs`](./Min%20Window%20Substring/cs/MinWindowSubstring/MinWindowSubstring.cs)
+  * Test runner: [`MinWindowSubstringTests.cs`](./Min%20Window%20Substring/cs/MinWindowSubstringTests/MinWindowSubstringTests.cs)
 * ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
   * Solution: [`min_window_substring`](./Min%20Window%20Substring/py/min_window_substring.py)
   * Test runner: [`test_min_window_substring`](./Min%20Window%20Substring/py/test_min_window_substring.py)
